@@ -129,7 +129,6 @@ h1 {
   pointer-events: auto;
 }
 
-/* Ensure tooltips are not clipped */
 .ticket, .tickets-container {
   overflow: visible !important;
 }

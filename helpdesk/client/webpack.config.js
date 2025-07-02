@@ -6,13 +6,13 @@ module.exports = {
   output: {
     filename: 'bundle.[contenthash].js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/', // Добавлено это
+    publicPath: '/',
     clean: true
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      inject: 'body' // Явно указываем куда вставлять скрипт
+      inject: 'body'
     })
   ],
   module: {
@@ -35,7 +35,7 @@ module.exports = {
     port: 9000,
     open: true,
     hot: true,
-    historyApiFallback: true, // Важно для SPA
+    historyApiFallback: true,
     client: {
       overlay: {
         errors: true,
